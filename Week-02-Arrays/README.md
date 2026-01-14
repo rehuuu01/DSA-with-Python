@@ -19,6 +19,19 @@
 3. Reverse an array using two pointers  
    - Time Complexity: O(n)  
    - Space Complexity: O(1)
+   
+## Day 4 – Arrays (Basic Operations)
+
+### Problems Solved:
+1. Check if array is sorted
+2. Linear search
+3. Count occurrences of an element
+
+### Concepts Practiced:
+- Array traversal
+- Comparison logic
+- Counters
+- Time complexity O(n)
 
 ## 💻 Language Used
 - Python
