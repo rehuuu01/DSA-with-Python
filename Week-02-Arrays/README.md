@@ -41,3 +41,14 @@
 - How to solve problems without sorting
 - Using constant extra space
 - Writing clean and interview-ready code
+
+### Day 5 – Array Patterns
+Solved:
+- Remove duplicates from array (with sorting + two pointers)
+- Left rotate array by one
+
+Concepts:
+- Two-pointer technique
+- In-place array manipulation
+- Array rotation logic
+
