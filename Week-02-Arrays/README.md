@@ -52,3 +52,24 @@ Concepts:
 - In-place array manipulation
 - Array rotation logic
 
+### Day 6 – Array Manipulation (Two Pointer Technique)
+
+Solved:
+- Move All Zeros to End
+
+Revised / Reinforced:
+- Second Largest Element in Array
+- Check if Array is Sorted
+- Reverse Array (In-place)
+
+Key Concepts:
+- Two-pointer technique
+- In-place array modification
+- Edge case handling
+
+Time & Space Complexity:
+- Time: O(n)
+- Space: O(1)
+
+Notes:
+Reinforced previously learned array problems and focused on debugging and optimization.
