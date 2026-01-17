@@ -86,3 +86,11 @@ Time & Space Complexity:
 
 Notes:
 Reinforced previously learned array problems and focused on debugging and optimization.
+ 
+ Problem: Left Rotate Array by K
+Key Learning:
+- Reversal algorithm for array rotation
+- Modulo optimization when k > n
+- In-place operations using two pointers
+Time Complexity: O(n)
+Space Complexity: O(1)
