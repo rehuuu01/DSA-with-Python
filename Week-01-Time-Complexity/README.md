@@ -8,9 +8,15 @@
 - Constant vs Linear Time Complexity
 
 ## 🧠 Problems Solved
-1. Count digits of a number — **O(n)**
-2. Sum of first N numbers — **O(n)**
-3. Check whether a number is Even or Odd — **O(1)**
+1. Count digits of a number — O(n)
+   - Key Learning: Loop-based counting / Time complexity analysis
+
+2. Sum of first N numbers — O(n)
+   - Key Learning: Mathematical summation / Loop vs formula comparison
+
+3. Check whether a number is Even or Odd — O(1)
+   - Key Learning: Conditional logic / Constant time operation
+
 
 ## 💻 Language Used
 - Python
