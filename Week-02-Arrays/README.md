@@ -87,10 +87,52 @@ Time & Space Complexity:
 Notes:
 Reinforced previously learned array problems and focused on debugging and optimization.
  
- Problem: Left Rotate Array by K
-Key Learning:
-- Reversal algorithm for array rotation
-- Modulo optimization when k > n
-- In-place operations using two pointers
-Time Complexity: O(n)
-Space Complexity: O(1)
+ ### Day 7 – Arrays (Hashing & Rotation)
+✅ Problems Solved
+
+ 1. Left Rotate Array by K Positions
+ 2. Union of Two Arrays
+ 3. Intersection of Two Arrays
+
+ 1. Left Rotate Array by K Positions
+  - Problem Statement
+Given an array of size n and an integer k, rotate the array to the left by k positions.
+# Key Learnings
+- Understanding array rotation mechanics
+- Handling cases where k > n using k = k % n
+- Difference between:
+- Brute force shifting
+- Optimized in-place approach
+- Index manipulation without extra space
+- Common interview question on arrays
+
+⏱️ Time & Space Complexity
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+2.  Union of Two Arrays (Using Hashing)
+ -  Problem Statement
+Given two arrays, find the union containing all unique elements from both arrays.
+🧠 Key Learnings
+- Use of hashing via Python set
+- Sets automatically eliminate duplicates
+- Explicit loops improve conceptual clarity
+- When to prefer hashing over nested loops
+- Real-world use of hash tables in arrays
+
+⏱️ Time & Space Complexity
+- Time Complexity: O(n + m)
+- Space Complexity: O(n + m)
+
+3. Intersection of Two Arrays (Using Hashing)
+- Problem Statement
+Given two arrays, find the elements that are common in both arrays.
+🧠 Key Learnings
+- Converting an array into a hash set for O(1) lookup
+- Efficient membership checking using hashing
+- Avoiding duplicates in the result
+- Core interview concept: Hashing + Arrays
+
+⏱️ Time & Space Complexity
+- Time Complexity: O(n + m)
+- Space Complexity: O(m)
