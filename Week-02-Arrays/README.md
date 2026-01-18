@@ -136,3 +136,14 @@ Given two arrays, find the elements that are common in both arrays.
 ⏱️ Time & Space Complexity
 - Time Complexity: O(n + m)
 - Space Complexity: O(m)
+
+## Day 8 – Arrays (Prefix Sum & Hashing)
+
+### Problems Solved:
+- Find Missing Number
+- Longest Subarray with Sum K
+
+### Key Learnings:
+- Prefix sum stores cumulative information
+- Hashmaps help avoid nested loops
+- Reduced O(n²) solutions to O(n)
