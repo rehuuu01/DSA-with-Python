@@ -147,3 +147,26 @@ Given two arrays, find the elements that are common in both arrays.
 - Prefix sum stores cumulative information
 - Hashmaps help avoid nested loops
 - Reduced O(n²) solutions to O(n)
+
+## Day 9 – Hashing Basics (Arrays)
+
+### Problems Solved
+1. Two Sum
+2. Frequency of Elements in an Array
+3. Element Appearing Once (Others Appear Twice)
+
+### Key Concepts Learned
+- Hashing using Python dictionary
+- Complement-based problem solving
+- Frequency counting technique
+- Difference between sequential and nested loops
+- Why two loops do NOT always mean O(n²)
+
+### Time & Space Complexity
+- Time Complexity: O(n)
+- Space Complexity: O(n)
+
+### Key Takeaways
+- Hashing helps reduce brute force solutions
+- Count first, then decide (important for frequency problems)
+- Clean logic is more important than clever tricks initially
