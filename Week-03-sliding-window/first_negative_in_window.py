@@ -1,39 +1,39 @@
-def frist_negative_integer(arr, k):
-    n = len(arr)
+def first_negative_integer(arr, k):
+    if len(arr) < k or k <= 0:
+        return None  # Edge case
+
     result = []
-    neg_index = []
+    neg_queue = []   # stores indices of negative numbers
+    window_start = 0
 
-    # Process the first window
-    for i in range(k):
-        if arr[i] < 0:
-            neg_index.append(i)
+    for window_end in range(len(arr)):
+        # If current element is negative, add its index
+        if arr[window_end] < 0:
+            neg_queue.append(window_end)
 
-    # Process the rest of the windows
-    for i in range(k, n):
-        # Append the first negative integer of the previous window
-        if neg_index:
-            result.append(arr[neg_index[0]])
-        else:
-            result.append(0)
+        # When window size reaches k
+        if window_end >= k - 1:
+            # First negative in current window
+            if neg_queue:
+                result.append(arr[neg_queue[0]])
+            else:
+                result.append(0)
 
-        # Remove elements that are out of this window
-        while neg_index and neg_index[0] <= i - k:
-            neg_index.pop(0)
+            # Remove elements going out of the window
+            if neg_queue and neg_queue[0] == window_start:
+                neg_queue.pop(0)
 
-        # Add the current element if it is negative
-        if arr[i] < 0:
-            neg_index.append(i)
-
-    # Append the first negative integer of the last window
-    if neg_index:
-        result.append(arr[neg_index[0]])
-    else:
-        result.append(0)
+            window_start += 1  # Slide the window
 
     return result
+
+
 if __name__ == "__main__":
     arr = list(map(int, input("Enter elements: ").split()))
     k = int(input("Enter the size of the window (k): "))
-    # Call the function and print the result
-    result = frist_negative_integer(arr, k)
-    print(f"The first negative integers in each window of size {k} are: {result}")
+
+    result = first_negative_integer(arr, k)
+    if result is None:
+        print("Invalid input")
+    else:
+        print(f"The first negative integers in each window of size {k} are: {result}")
