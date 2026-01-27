@@ -1,53 +1,50 @@
-# Day 15 – Recursion Basics
+# Week 05 – Recursion & Backtracking
 
-## 📌 Topics Covered
-- Introduction to Recursion
-- Base Case and Recursive Case
-- Understanding Recursive Call Stack
-- Using recursion with classic patterns
+This week focuses on understanding recursion fundamentals and extending them into backtracking-based problem solving.
 
 ---
 
-## ✅ Problems Solved
+## 📅 Day-wise Progress
 
-1. **Print Numbers from 1 to N**
-   - Recursive call first, then print
-   - Demonstrates stack unwinding
+### ✅ Day 15 – Recursion Basics
+**Problems Covered:**
+- Print 1 to N
+- Print N to 1
+- Factorial of a number
+- Sum of first N natural numbers
+- Reverse an array using recursion (two pointers)
 
-2. **Print Numbers from N to 1**
-   - Print before recursive call
-   - Demonstrates top-down recursion
+**Key Learnings:**
+- Importance of a clear base case
+- Recursive calls must reduce problem size
+- Order of execution (before vs after recursion)
+- Recursion can replace loops for cleaner logic
 
-3. **Factorial of a Number**
-   - Classic recursion problem
-   - Base case: n = 0 or 1
-
-4. **Sum of First N Natural Numbers**
-   - Recursive reduction of problem size
-   - Avoided shadowing Python built-in functions
-
-5. **Reverse an Array (Two Pointers + Recursion)**
-   - Used start and end pointers
-   - Recursion replaces iterative loop
-   - In-place reversal
+📁 Folder: `Day-15-Recursion-Basics/`
 
 ---
 
-## 🧠 Key Learnings
-- Always define a clear **base case**
-- Recursive calls must move toward the base case
-- Order of operations (before/after recursion) affects output
-- Variables that change per call must be passed as parameters
-- Recursion often trades space for cleaner logic
+### ✅ Day 16 – Backtracking Basics
+**Problems Covered:**
+- Subsets (Power Set)
+- Permutations
+- Combination Sum
+
+**Key Learnings:**
+- Backtracking = recursion + undo
+- Decision tree exploration
+- State management using `append()` and `pop()`
+- Used index control and visited arrays to avoid duplicates
+
+📁 Folder: `Day-16-Backtracking/`
 
 ---
 
-## ⏱️ Complexity Notes
-- Most problems: **O(n) time**
-- Recursion stack: **O(n) space**
+## 🧠 Overall Takeaways
+- Recursion builds the foundation for backtracking
+- Backtracking is essential for problems involving all possible combinations
+- Clean folder and day-wise structure improves readability and scalability
 
 ---
 
-## 🚀 Status
-✔ Day 15 completed successfully  
-➡️ Next: More recursion patterns & backtracking
+✅ All solutions are implemented in Python and organized day-wise for easy revision.
