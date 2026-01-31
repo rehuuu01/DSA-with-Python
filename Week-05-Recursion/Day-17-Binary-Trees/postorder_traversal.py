@@ -1,8 +1,34 @@
+from collections import deque
+
 class TreeNode:
     def __init__(self, val):
         self.val = val
         self.left = None
         self.right = None
+
+
+def build_tree(values):
+    if not values or values[0] == -1:
+        return None
+
+    root = TreeNode(values[0])
+    queue = deque([root])
+    i = 1
+
+    while queue and i < len(values):
+        current = queue.popleft()
+
+        if values[i] != -1:
+            current.left = TreeNode(values[i])
+            queue.append(current.left)
+        i += 1
+
+        if i < len(values) and values[i] != -1:
+            current.right = TreeNode(values[i])
+            queue.append(current.right)
+        i += 1
+
+    return root
 
 
 class Solution:
@@ -21,12 +47,8 @@ class Solution:
 
 
 if __name__ == "__main__":
-    # Manually creating the tree
-    root = TreeNode(1)
-    root.left = TreeNode(2)
-    root.right = TreeNode(3)
-    root.right.left = TreeNode(4)
-    root.right.right = TreeNode(5)
+    values = list(map(int, input("Enter tree nodes (level order, -1 for NULL): ").split()))
+    root = build_tree(values)
 
     sol = Solution()
     print("Postorder Traversal:", sol.postorderTraversal(root))
