@@ -7,34 +7,53 @@ class TreeNode:
 
 def deleteNode(root, key):
     """
-    Delete a node with given key in a BST.
-    Time: O(h) | Space: O(h)
+    Delete a node with given key in a BST (ITERATIVE).
+    Time: O(h)
+    Space: O(1)
     """
+    parent = None
+    curr = root
 
-    if not root:
-        return None
+    # 1️⃣ Find the node to delete
+    while curr and curr.val != key:
+        parent = curr
+        if key < curr.val:
+            curr = curr.left
+        else:
+            curr = curr.right
 
-    if key < root.val:
-        root.left = deleteNode(root.left, key)
+    # Key not found
+    if not curr:
+        return root
 
-    elif key > root.val:
-        root.right = deleteNode(root.right, key)
-
-    else:
-        # Case 1 & 2: node with 0 or 1 child
-        if not root.left:
-            return root.right
-        if not root.right:
-            return root.left
-
-        # Case 3: node with 2 children
+    # 2️⃣ Case: node has 2 children
+    if curr.left and curr.right:
         # Find inorder successor (min in right subtree)
-        successor = root.right
-        while successor.left:
-            successor = successor.left
+        succ_parent = curr
+        succ = curr.right
+        while succ.left:
+            succ_parent = succ
+            succ = succ.left
 
-        root.val = successor.val
-        root.right = deleteNode(root.right, successor.val)
+        # Copy successor value to current node
+        curr.val = succ.val
+
+        # Prepare to delete successor node
+        curr = succ
+        parent = succ_parent
+
+    # 3️⃣ Case: node has 0 or 1 child
+    child = curr.left if curr.left else curr.right
+
+    # If deleting the root node
+    if not parent:
+        return child
+
+    # Reconnect parent to child
+    if parent.left == curr:
+        parent.left = child
+    else:
+        parent.right = child
 
     return root
 
@@ -74,3 +93,12 @@ if __name__ == "__main__":
 
     print("\nInorder after deleting", key, ":")
     inorder(root)
+
+    """
+    Expected BST after deletion of 3:
+            5
+           / \
+          4   7
+         /     \
+        2       8
+    """
