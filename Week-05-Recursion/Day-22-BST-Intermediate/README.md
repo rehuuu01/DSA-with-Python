@@ -9,13 +9,13 @@
 
 1️⃣ Validate Binary Search Tree
 
-Approach 1: Inorder Traversal
+>>Approach 1: Inorder Traversal
 
 Inorder traversal of a valid BST gives strictly increasing values
 
 Track the previously visited node and compare
 
-Approach 2: Min–Max Range Method
+>>Approach 2: Min–Max Range Method
 
 Each node must lie within a valid (min, max) range
 
@@ -41,11 +41,11 @@ Space Complexity: O(1) (iterative)
 
 Three cases
 
-Node is a leaf → delete directly
+>>Node is a leaf → delete directly
 
-Node has one child → replace node with child
+>>Node has one child → replace node with child
 
-Node has two children → replace with inorder successor (minimum in right subtree)
+>>Node has two children → replace with inorder successor (minimum in right subtree)
 
 Time Complexity: O(h)
 Space Complexity: O(h) (recursive stack)
