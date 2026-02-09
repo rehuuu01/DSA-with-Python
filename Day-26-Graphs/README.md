@@ -72,6 +72,5 @@ Approach
 |-README.md
 
 ✅ Status
-
 Graph traversal fundamentals completed successfully 🚀
 ** Ready to move to Connected Components / Number of Provinces
