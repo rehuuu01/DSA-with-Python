@@ -78,7 +78,6 @@ Explanation:
 ## 📁 Files
 
 - `kosaraju_scc.py` → Implementation
-- `tests.txt` → Custom test cases
 - `notes.txt` → Intuition & dry run notes
 
 ---
