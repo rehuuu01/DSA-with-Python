@@ -90,4 +90,13 @@ INTERVIEW QUESTIONS
 Q1: When does BFS give shortest path?
     → Only in unweighted graph.
 
-Q2: What if graph has weig
+Q2: What if graph has weights?
+→ Use Bellman-Ford.
+
+
+-----------------------------------------
+IMPORTANT CONNECTION
+-----------------------------------------
+Unweighted Graph → BFS
+Weighted (positive) → Dijkstra
+Negative weights → Bellman-Ford

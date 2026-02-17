@@ -1,0 +1,90 @@
+
+---
+
+# 📝 notes.txt
+
+```markdown
+=============================
+DAY 32 – DIJKSTRA NOTES
+=============================
+
+1️⃣ WHAT IS DIJKSTRA?
+
+Dijkstra is a greedy algorithm that finds the shortest path
+from a source node to all other nodes in a weighted graph
+with NON-NEGATIVE edge weights.
+
+---
+
+2️⃣ MAIN IDEA
+
+Always expand the node with the smallest distance first.
+
+This is achieved using:
+→ Min Heap (Priority Queue)
+
+---
+
+3️⃣ EDGE RELAXATION
+
+If:
+
+distance[u] + weight < distance[v]
+
+Then update distance[v]
+
+This process is called RELAXATION.
+
+---
+
+4️⃣ WHY SKIP OUTDATED ENTRIES?
+
+When we push updated distances into the heap,
+older larger values may still exist inside the heap.
+
+So we check:
+
+if curr_dist > dist[node]:
+    continue
+
+This avoids extra work.
+
+---
+
+5️⃣ BFS VS DIJKSTRA
+
+BFS:
+- Used for unweighted graphs
+- Uses Queue
+- Time: O(V + E)
+
+Dijkstra:
+- Used for weighted graphs
+- Uses Min Heap
+- Time: O((V + E) log V)
+
+---
+
+6️⃣ LIMITATION
+
+Does NOT work for negative weights.
+
+For negative weights:
+→ Use Bellman-Ford Algorithm
+
+---
+
+7️⃣ INTERVIEW TIP
+
+Common Questions:
+- Why use heap?
+- What happens if weights are negative?
+- How to modify for directed graph?
+- Can we stop early if target found?
+
+---
+
+8️⃣ INTUITION CHECK
+
+If all weights are 1:
+Dijkstra behaves exactly like BFS.
