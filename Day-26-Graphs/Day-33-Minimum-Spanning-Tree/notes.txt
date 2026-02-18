@@ -1,0 +1,80 @@
+DAY 33 – MINIMUM SPANNING TREE (MST)
+
+1️⃣ What is a Spanning Tree?
+
+- A spanning tree is a subgraph of a connected, undirected graph
+- It connects all vertices
+- Contains exactly (V - 1) edges
+- Contains no cycles
+
+------------------------------------------------------
+
+2️⃣ What is Minimum Spanning Tree (MST)?
+
+Among all possible spanning trees,
+the one with minimum total edge weight is called MST.
+
+------------------------------------------------------
+
+3️⃣ Why MST?
+
+- Network design (roads, cables, internet)
+- Minimum cost connection problems
+- Clustering algorithms
+- Greedy algorithm applications
+
+------------------------------------------------------
+
+4️⃣ Kruskal’s Algorithm (Greedy)
+
+Core Idea:
+Always pick the smallest edge that does NOT form a cycle.
+
+Steps:
+1. Sort all edges by weight.
+2. Initialize Disjoint Set (Union-Find).
+3. Iterate over sorted edges:
+    - If adding edge does not form cycle → add it.
+4. Stop when (V - 1) edges are added.
+
+------------------------------------------------------
+
+5️⃣ Cycle Detection
+
+To detect cycle efficiently:
+Use Disjoint Set (Union-Find)
+
+Operations:
+- find(x) → returns parent (with path compression)
+- union(x, y) → merge sets (union by rank)
+
+------------------------------------------------------
+
+6️⃣ Disjoint Set Optimizations
+
+✔ Path Compression
+    - Makes tree flat
+    - Improves future find operations
+
+✔ Union by Rank
+    - Attach smaller tree under larger tree
+    - Keeps tree height small
+
+------------------------------------------------------
+
+7️⃣ Time Complexity
+
+Sorting edges → O(E log E)
+Union-Find operations → ~O(E)
+
+Final Time Complexity:
+O(E log E)
+
+------------------------------------------------------
+
+8️⃣ Important Observations
+
+- MST exists only if graph is connected.
+- If graph has V vertices → MST has (V - 1) edges.
+- MST is not always unique.
+- Works only for Undirected Graphs.
