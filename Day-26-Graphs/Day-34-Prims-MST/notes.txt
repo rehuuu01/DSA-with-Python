@@ -1,0 +1,47 @@
+Day 34 – Prim’s Algorithm Notes
+
+1. Purpose:
+   - Find Minimum Spanning Tree (MST)
+   - Works on connected, undirected, weighted graph
+
+2. Core Idea:
+   - Start from any node
+   - Use min heap to always pick smallest edge
+   - Expand tree one node at a time
+
+3. Algorithm Steps:
+   - Initialize min heap with (0, start_node)
+   - Maintain visited set
+   - While heap not empty:
+       - Pop smallest weight edge
+       - If node not visited:
+            - Add weight to total
+            - Mark visited
+            - Push its neighbors into heap
+
+4. Why It Works:
+   - Greedy choice property
+   - At every step we choose smallest valid edge
+   - Guarantees global minimum for MST
+
+5. Difference from Kruskal:
+   - Prim grows tree from node
+   - Kruskal sorts edges globally
+   - Prim uses heap
+   - Kruskal uses DSU
+
+6. Difference from Dijkstra:
+   - Prim minimizes total MST weight
+   - Dijkstra minimizes distance from source
+
+7. Time Complexity:
+   O(E log V)
+
+8. When to Use:
+   - Dense graphs
+   - When adjacency list representation is available
+
+9. Important Interview Points:
+   - Graph must be connected for full MST
+   - If graph disconnected → get Minimum Spanning Forest
+   - Can start from any node
