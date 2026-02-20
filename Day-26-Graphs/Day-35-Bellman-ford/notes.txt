@@ -1,0 +1,42 @@
+DAY 35 - BELLMAN FORD ALGORITHM
+
+Core Idea:
+-----------
+Repeatedly relax all edges to gradually find shortest paths.
+
+Relaxation:
+------------
+If dist[u] + weight < dist[v]
+    update dist[v]
+
+Why (V - 1) times?
+-------------------
+A shortest path in a graph can have at most (V - 1) edges.
+So after (V - 1) iterations, all shortest paths must be finalized.
+
+Negative Weight Cycle:
+-----------------------
+If after (V - 1) iterations we can still relax an edge,
+it means there exists a cycle whose total weight is negative.
+
+That cycle allows infinite reduction in path cost,
+so shortest path does not exist.
+
+When to Use:
+------------
+- Graph contains negative weights
+- Need to detect negative cycles
+- Directed graphs
+- Competitive programming problems
+
+Difference from Dijkstra:
+--------------------------
+Dijkstra fails when negative weights are present
+because it assumes once a node is finalized, it cannot improve.
+
+Bellman-Ford does not make that assumption.
+
+Optimization Insight:
+----------------------
+If during any iteration no distance updates occur,
+we can stop early (early stopping optimization).
