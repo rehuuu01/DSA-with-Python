@@ -1,0 +1,30 @@
+DAY 36 – Floyd Warshall Algorithm
+
+Type:
+All Pairs Shortest Path
+
+Works For:
+- Directed Graph
+- Undirected Graph
+- Negative weights allowed
+- Not allowed: Negative cycle
+
+Core Idea:
+Try every node as intermediate
+
+Formula:
+dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
+
+Time Complexity:
+O(V^3)
+
+Space Complexity:
+O(V^2)
+
+Negative Cycle Check:
+If dist[i][i] < 0 → negative cycle exists
+
+Comparison:
+Dijkstra → single source, no negative weights
+Bellman-Ford → single source, handles negative
+Floyd-Warshall → all pairs, handles negative
