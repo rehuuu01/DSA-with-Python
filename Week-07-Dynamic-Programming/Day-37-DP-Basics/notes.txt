@@ -1,0 +1,97 @@
+Day 37 - Dynamic Programming (DP Basics)
+-----------------------------------------
+
+1️⃣ What is Dynamic Programming?
+
+Dynamic Programming (DP) is an optimization technique used
+to solve problems with:
+
+- Overlapping Subproblems
+- Optimal Substructure
+
+Instead of solving the same subproblem multiple times,
+we store the result and reuse it.
+
+---------------------------------------------------------
+
+2️⃣ Key Concepts
+
+• Overlapping Subproblems
+  Same subproblems are solved multiple times.
+  Example: Fibonacci recursion.
+
+• Optimal Substructure
+  Optimal solution can be built from optimal solutions
+  of smaller subproblems.
+
+---------------------------------------------------------
+
+3️⃣ Two Main Approaches
+
+A) Memoization (Top-Down)
+   - Recursion + caching
+   - Uses extra array (dp)
+   - Reduces time complexity
+   - Still uses recursion stack
+
+B) Tabulation (Bottom-Up)
+   - Iterative approach
+   - Build solution from base case upwards
+   - No recursion stack
+
+---------------------------------------------------------
+
+4️⃣ Space Optimization
+
+If DP relation depends only on:
+    dp[i-1] and dp[i-2]
+
+We don’t need full array.
+We can store only previous two values.
+
+Reduces space from O(n) → O(1)
+
+---------------------------------------------------------
+
+5️⃣ Fibonacci Problem
+
+Recurrence:
+    F(n) = F(n-1) + F(n-2)
+
+Time Complexity Comparison:
+
+Recursive       → O(2^n)
+Memoization     → O(n)
+Tabulation      → O(n)
+Space Optimized → O(n)
+
+---------------------------------------------------------
+
+6️⃣ Climbing Stairs
+
+Problem:
+You can climb 1 or 2 steps.
+Find number of distinct ways to reach n.
+
+Recurrence:
+    ways(n) = ways(n-1) + ways(n-2)
+
+This is exactly Fibonacci pattern.
+
+---------------------------------------------------------
+
+7️⃣ DP Pattern Recognition
+
+When problem asks:
+- Count number of ways
+- Min / Max something
+- Choose between options repeatedly
+
+Think DP.
+
+---------------------------------------------------------
+
+Key Takeaway:
+
+DP = Store results of smaller problems
+     to avoid recomputation.
