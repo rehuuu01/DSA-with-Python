@@ -1,0 +1,98 @@
+==============================
+Dynamic Programming – Core Concepts
+Day 38 Notes
+==============================
+
+1) What is Dynamic Programming?
+
+Dynamic Programming (DP) is an optimization technique used
+to solve problems by breaking them into smaller subproblems,
+storing the results of those subproblems, and reusing them.
+
+It is mainly used when:
+- The problem has overlapping subproblems
+- The problem has optimal substructure
+
+
+----------------------------------
+
+2) Overlapping Subproblems
+
+When the same subproblem is solved multiple times.
+
+Example:
+In Fibonacci recursion,
+fib(5) calls fib(4) and fib(3),
+and fib(4) again calls fib(3) and fib(2).
+
+This leads to repeated work.
+
+
+----------------------------------
+
+3) Optimal Substructure
+
+A problem has optimal substructure if:
+The optimal solution can be built from optimal solutions
+of its subproblems.
+
+Example:
+Climbing Stairs:
+Ways(n) = Ways(n-1) + Ways(n-2)
+
+The best answer for n depends on best answers
+of smaller values.
+
+
+----------------------------------
+
+4) Memoization vs Tabulation
+
+Memoization:
+- Top-Down approach
+- Uses recursion
+- Stores results in cache
+- Easy to implement
+
+Tabulation:
+- Bottom-Up approach
+- Iterative
+- Builds solution from base cases
+- More space efficient in many cases
+
+
+----------------------------------
+
+5) When to Think About DP?
+
+If problem involves:
+- Counting ways
+- Minimum / Maximum
+- Choices at each step
+- Recursion with repeated calls
+
+Then DP is likely applicable.
+
+
+----------------------------------
+
+6) General DP Steps
+
+Step 1: Define state
+Step 2: Write recurrence relation
+Step 3: Identify base cases
+Step 4: Decide memoization or tabulation
+Step 5: Optimize space if possible
+
+
+----------------------------------
+
+Conclusion:
+
+DP is not about memorizing problems.
+It is about:
+- Identifying state
+- Understanding transitions
+- Avoiding repeated computation
+
+Strong basics → Easier advanced DP.
