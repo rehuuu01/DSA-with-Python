@@ -1,102 +1,113 @@
 # Week 06 – Graphs
 
-This week focuses on mastering Graph data structures and algorithms.
+## 📌 Overview
 
-Graphs are one of the most important topics in Data Structures and Algorithms,
-frequently asked in product-based company interviews.
+This week focused on mastering Graph Data Structures and Algorithms,
+covering traversal, cycle detection, shortest paths, minimum spanning trees,
+and advanced graph algorithms.
 
----
-
-## 📌 Topics Covered
-
-### Day 26 – BFS & DFS
-- Breadth First Search (BFS)
-- Depth First Search (DFS)
-- Graph traversal using adjacency list
-- Time Complexity: O(V + E)
+Graphs are one of the most important topics for technical interviews.
 
 ---
 
-### Day 27 – Revision
-- Deep revision of BFS & DFS
-- Understanding traversal intuition
-- Strengthening graph basics
+## 📚 Topics Covered
 
----
+### 🔹 Graph Basics
+- Graph Representation (Adjacency List)
+- BFS (Breadth First Search)
+- DFS (Depth First Search)
 
-### Day 28 – Connected Components & Cycle Detection
-- Count Connected Components (Undirected Graph)
-- Cycle Detection using DFS
-- Graph traversal applications
+### 🔹 Graph Applications
+- Connected Components
+- Cycle Detection (Undirected Graph)
+- Topological Sort (Kahn’s Algorithm – BFS)
 
----
-
-### Day 29 – Topological Sort
-- Kahn’s Algorithm (BFS + Indegree)
-- Directed Acyclic Graph (DAG)
-- Ordering dependencies
-- Time Complexity: O(V + E)
-
----
-
-### Day 30 – Strongly Connected Components (SCC)
+### 🔹 Strongly Connected Components
 - Kosaraju’s Algorithm
-- Two-pass DFS approach
 - Graph Transpose
-- Finishing time stack logic
+- Finishing Time Stack Logic
+
+---
+
+## 🚀 Shortest Path Algorithms
+
+### 1️⃣ Shortest Path in Unweighted Graph
+- BFS based approach
 - Time Complexity: O(V + E)
+
+### 2️⃣ Dijkstra’s Algorithm
+- Min Heap (Priority Queue)
+- Works for non-negative weights
+- Time Complexity: O(E log V)
+
+### 3️⃣ Bellman-Ford Algorithm
+- Handles negative weights
+- Detects negative weight cycles
+- Time Complexity: O(V * E)
+
+### 4️⃣ Floyd–Warshall Algorithm
+- All-Pairs Shortest Path
+- Dynamic Programming based
+- Time Complexity: O(V³)
+
+---
+
+## 🌲 Minimum Spanning Tree (MST)
+
+### 1️⃣ Kruskal’s Algorithm
+- Greedy approach
+- Uses Disjoint Set (Union-Find)
+- Path Compression + Union by Rank
+- Time Complexity: O(E log E)
+
+### 2️⃣ Prim’s Algorithm
+- Min Heap based
+- Greedy expansion
+- Time Complexity: O(E log V)
 
 ---
 
 ## 🧠 Key Concepts Learned
 
-- Graph representation (Adjacency List)
-- Traversal techniques (BFS & DFS)
-- Connected components
-- Cycle detection
-- Topological ordering
+- Graph Representation (Adjacency List)
+- BFS & DFS Traversals
+- Cycle Detection
+- Topological Ordering
 - Strongly Connected Components
-- Multi-pass DFS strategy
+- Shortest Path Algorithms
+- Minimum Spanning Tree
+- Greedy vs Dynamic Programming approaches in graphs
+- Negative cycle detection
 
 ---
 
-## ⏱ Overall Complexity Pattern
+## 📂 Folder Structure
 
-Most graph algorithms in this week follow:
-
-Time Complexity: **O(V + E)**  
-Space Complexity: **O(V)**  
-
-Where:
-- V = Number of vertices
-- E = Number of edges
-
----
-
-## 🚀 Progression
-
-This week marks the transition from:
-Basic traversal → Graph applications → Advanced graph algorithms
-
-The foundation built here prepares for:
-- Tarjan’s Algorithm
-- Dijkstra’s Algorithm
-- Union-Find (Disjoint Set)
-- Advanced interview-level graph problems
-
----
-
-## 📁 Folder Structure
-
-Week-06-Graphs/
+Day-26-Graphs/
 │
 ├── Day-26-BFS-DFS/
 ├── Day-27-Revision/
 ├── Day-28-Connected-Components-Cycle/
 ├── Day-29-Topological-Sort/
-└── Day-30-Strongly-Connected-Components/
+├── Day-30-Strongly-Connected-Components/
+├── Day-31-Shortest-Path-Unweighted/
+├── Day-32-Dijkstra/
+├── Day-33-Minimum-Spanning-Tree/
+├── Day-34-Prims-MST/
+├── Day-35-Bellman-ford/
+├── Day-36-Floyd-Warshall/
+└── README.md
 
 ---
 
-Consistency and depth over speed.
-Graphs mastered step by step.
+## 📌 Summary
+
+Week 06 completed with advanced graph mastery.
+
+From basic traversals to:
+- All shortest path variants
+- MST algorithms
+- SCC detection
+- Negative cycle handling
+
+This marks strong progress toward interview-level DSA preparation.
