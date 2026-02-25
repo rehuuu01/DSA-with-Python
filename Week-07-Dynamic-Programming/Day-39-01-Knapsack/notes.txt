@@ -1,0 +1,84 @@
+==============================
+DAY 39 – 0/1 KNAPSACK NOTES
+==============================
+
+1️⃣ Pattern Recognition
+
+Knapsack problems usually involve:
+- Capacity constraint
+- Maximizing value / minimizing cost
+- Choose or skip items
+
+Signal words:
+- “At most once”
+- “Pick or not pick”
+- “Maximum profit/value”
+
+------------------------------------------------
+
+2️⃣ Recurrence Relation
+
+f(n, W) =
+    0                                  if n == 0 or W == 0
+    f(n-1, W)                          if weight[n-1] > W
+    max(
+        value[n-1] + f(n-1, W - weight[n-1]),
+        f(n-1, W)
+    )                                  otherwise
+
+------------------------------------------------
+
+3️⃣ Why Overlapping Subproblems?
+
+Same (n, W) state gets recomputed multiple times.
+Hence we store results in dp[n][W].
+
+Total states = n * W
+Therefore complexity becomes O(nW).
+
+------------------------------------------------
+
+4️⃣ Why Backward Loop in Space Optimization?
+
+In 1D DP:
+
+dp[w] = max(dp[w], value[i] + dp[w - weight[i]])
+
+If we iterate forward:
+We may reuse updated values from same row
+→ That becomes Unbounded Knapsack (WRONG)
+
+So we iterate backwards:
+for w in range(W, weight[i]-1, -1)
+
+This preserves previous row values.
+
+------------------------------------------------
+
+5️⃣ Difference from Unbounded Knapsack
+
+0/1 Knapsack:
+- Each item only once
+- Iterate capacity backward
+
+Unbounded Knapsack:
+- Unlimited times
+- Iterate capacity forward
+
+------------------------------------------------
+
+6️⃣ Interview Tip
+
+Always explain:
+- State definition
+- Transition
+- Base case
+- Why time = O(nW)
+
+Most candidates only write code.
+Strong candidates explain DP logic clearly.
+
+------------------------------------------------
+
+Day 39 Completed ✔
+Knapsack pattern unlocked 🔥
