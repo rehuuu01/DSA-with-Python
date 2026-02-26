@@ -1,0 +1,85 @@
+Day 40 – 0/1 Knapsack Pattern Reinforcement
+
+Goal:
+Strengthen conceptual clarity of the 0/1 Knapsack DP pattern.
+
+------------------------------------------------------------
+1. State Definition
+
+dp[i][w] =
+Maximum value using first i items with capacity w.
+
+Why this state?
+- i → number of items considered
+- w → remaining capacity
+This captures all subproblems uniquely.
+
+------------------------------------------------------------
+2. Decision (Core Idea)
+
+For every item:
+1. Take it
+2. Skip it
+
+If weight[i-1] <= w:
+
+dp[i][w] = max(
+    value[i-1] + dp[i-1][w - weight[i-1]],
+    dp[i-1][w]
+)
+
+Else:
+dp[i][w] = dp[i-1][w]
+
+------------------------------------------------------------
+3. Base Case
+
+dp[0][w] = 0
+dp[i][0] = 0
+
+If no items or no capacity → value = 0
+
+------------------------------------------------------------
+4. Why Reverse Loop in 1D DP?
+
+When using 1D DP:
+
+for w in range(W, weight-1, -1):
+
+We iterate backwards to avoid reusing the same item twice.
+
+If we iterate forward:
+dp[w - weight] might already include current item,
+which turns problem into Unbounded Knapsack.
+
+------------------------------------------------------------
+5. Pattern Mapping
+
+0/1 Knapsack → Maximize value
+
+Subset Sum → Boolean version
+Equal Partition → Subset Sum with total_sum / 2
+Count Subsets → Count ways instead of maximize
+Target Sum → Convert to subset sum
+
+------------------------------------------------------------
+6. Common Mistakes
+
+- Forgetting reverse iteration in 1D DP
+- Wrong base case initialization
+- Confusing 0/1 with Unbounded Knapsack
+- Incorrect dp dimensions
+
+------------------------------------------------------------
+7. Time & Space Complexity
+
+Recursive: O(2^n)
+Memoization: O(n * W)
+Tabulation: O(n * W)
+Space Optimized: O(W)
+
+------------------------------------------------------------
+
+Conclusion:
+Understanding the pattern is more important than memorizing code.
+This pattern forms the foundation of many DP interview problems.
