@@ -1,0 +1,18 @@
+DAY 41 - SUBSET SUM
+
+This is the first major variation of 0/1 Knapsack.
+
+Important Observations:
+- Instead of maximizing value, we check existence.
+- DP table stores boolean values.
+- Base case: sum = 0 is always True.
+- Reverse iteration required in 1D DP to prevent reuse of same element.
+
+Very Important:
+Subset Sum pattern is used in:
+1. Equal Partition
+2. Count of Subsets
+3. Minimum Subset Sum Difference
+4. Target Sum
+
+This pattern is extremely common in interviews.
