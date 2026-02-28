@@ -1,0 +1,22 @@
+DAY 42 – Knapsack Pattern Revision
+
+Core Pattern:
+dp[i][j] = answer using first i elements and capacity/sum j
+
+Key Observations:
+1. 0/1 means reverse loop in 1D DP
+2. Always define state clearly before coding
+3. Base case:
+   dp[0][0] = True
+4. For count problems:
+   use + instead of OR
+5. For max value problems:
+   use max()
+
+Pattern Variations:
+- Subset Sum → boolean
+- Equal Partition → target = total//2
+- Count Subsets → count ways
+- Knapsack → maximize value
+
+Confidence Level: Strengthened ✔
