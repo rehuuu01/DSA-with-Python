@@ -1,0 +1,16 @@
+Target Sum = 0/1 Knapsack Pattern
+
+P - N = target
+P + N = total_sum
+
+P = (total_sum + target) / 2
+
+Reduce to:
+Count subsets with sum = P
+
+Edge Cases:
+1. total_sum < |target|
+2. (total_sum + target) must be even
+
+Pattern Used:
+Count of Subsets with Given Sum
