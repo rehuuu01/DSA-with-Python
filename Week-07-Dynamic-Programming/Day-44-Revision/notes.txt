@@ -1,0 +1,20 @@
+DAY 44 - DP REVISION NOTES
+
+0/1 Knapsack Pattern Template:
+
+Initialize:
+dp = [0] * (target + 1)
+dp[0] = 1 or True
+
+For each num:
+    for j in range(target, num - 1, -1):
+        dp[j] = dp[j] + dp[j - num]   (count version)
+        OR
+        dp[j] = dp[j] or dp[j - num]  (boolean version)
+
+Important:
+Reverse loop ensures element is used only once.
+
+Target Sum Transformation:
+P = (target + total_sum) // 2
+Reduce to Count Subset Sum problem.s
