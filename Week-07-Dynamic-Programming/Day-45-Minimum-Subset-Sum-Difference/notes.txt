@@ -1,0 +1,30 @@
+Problem: Minimum Subset Sum Difference
+
+Goal:
+Divide array into two subsets such that the difference between their sums is minimum.
+
+Key Idea:
+Let total sum = S
+
+If subset sum = s1
+Then other subset sum = S - s1
+
+Difference = |(S - s1) - s1|
+           = |S - 2*s1|
+
+Goal: minimize |S - 2*s1|
+
+Approach:
+1. Compute total sum S
+2. Find possible subset sums up to S//2
+3. For each possible s1, compute difference
+4. Take minimum
+
+DP Pattern Used:
+Subset Sum (0/1 Knapsack variant)
+
+Time Complexity:
+O(n * S)
+
+Space Complexity:
+O(S)
