@@ -1,0 +1,119 @@
+DAY 46 – DYNAMIC PROGRAMMING REVISION
+0/1 KNAPSACK PATTERN
+
+Today’s goal was to reinforce the 0/1 Knapsack pattern and understand how
+multiple problems are variations of the same DP idea.
+
+--------------------------------------------------
+
+1. CORE IDEA OF 0/1 KNAPSACK
+
+Each element can be either:
+- Included
+- Excluded
+
+We make a decision for every element.
+
+General State:
+
+dp[i][j] = using first i elements, can we make sum j?
+
+Transition:
+
+If arr[i-1] <= j
+
+dp[i][j] =
+    dp[i-1][j]              (exclude element)
+    OR
+    dp[i-1][j-arr[i-1]]     (include element)
+
+--------------------------------------------------
+
+2. SPACE OPTIMIZATION
+
+Instead of 2D DP we can use 1D DP.
+
+Important rule:
+
+Traverse j from RIGHT → LEFT
+
+Example:
+
+for num in nums:
+    for j in range(target, num-1, -1):
+        dp[j] = dp[j] or dp[j-num]
+
+Reason:
+To avoid reusing the same element multiple times.
+
+--------------------------------------------------
+
+3. PROBLEMS FROM THIS PATTERN
+
+1. 0/1 Knapsack
+   Maximize value under weight constraint.
+
+2. Subset Sum
+   Determine if subset exists with given sum.
+
+3. Equal Partition
+   Check if array can be divided into two subsets with equal sum.
+
+   Condition:
+   total_sum must be EVEN.
+
+   Target = total_sum / 2
+
+4. Count of Subsets with Given Sum
+   Instead of boolean, count number of ways.
+
+   Transition:
+
+   dp[j] = dp[j] + dp[j-num]
+
+5. Target Sum
+
+   Convert to subset sum problem.
+
+   S1 - S2 = target
+   S1 + S2 = total_sum
+
+   Therefore:
+
+   S1 = (target + total_sum) / 2
+
+6. Minimum Subset Sum Difference
+
+   Partition array into two subsets
+   such that difference is minimum.
+
+   Idea:
+
+   Find subset sums up to total_sum // 2
+
+   difference = total_sum - 2 * subset_sum
+
+--------------------------------------------------
+
+4. COMMON PATTERN RECOGNITION
+
+If problem asks:
+
+• subset
+• partition
+• equal sum
+• target sum
+• difference between subsets
+
+→ Think of 0/1 Knapsack Pattern.
+
+--------------------------------------------------
+
+5. IMPORTANT TAKEAWAY
+
+Most DP interview problems are variations of patterns.
+
+Recognizing the pattern quickly
+is more important than memorizing code.
+
+0/1 Knapsack is one of the most important DP patterns.
