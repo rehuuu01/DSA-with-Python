@@ -1,0 +1,39 @@
+UNBOUNDED KNAPSACK
+
+This is a variation of the classic 0/1 Knapsack problem.
+
+Key Difference
+--------------
+0/1 Knapsack:
+Each item can be taken only once.
+
+Unbounded Knapsack:
+Each item can be taken unlimited times.
+
+State Definition
+----------------
+dp[w] = maximum value for capacity w
+
+Transition
+----------
+dp[w] = max(dp[w], value[i] + dp[w - weight[i]])
+
+Key Idea
+--------
+When considering item i:
+we can use the same item again,
+so we stay at the same index.
+
+Time Complexity
+---------------
+O(n * W)
+
+Space Complexity
+----------------
+O(W)
+
+Common Problems Using This Pattern
+----------------------------------
+Coin Change
+Rod Cutting
+Maximum Ribbon Cut
