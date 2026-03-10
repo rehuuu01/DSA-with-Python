@@ -1,0 +1,29 @@
+DAY 48 NOTES
+
+Problem Pattern
+0/1 Knapsack (Counting subsets)
+
+Key Transformation
+sum1 - sum2 = diff
+sum1 + sum2 = totalSum
+
+Add both equations
+
+2 * sum1 = diff + totalSum
+
+sum1 = (diff + totalSum) / 2
+
+Therefore the problem becomes:
+
+Count subsets with sum = (diff + totalSum) / 2
+
+DP Relation
+
+dp[j] += dp[j - num]
+
+Where:
+dp[j] = number of ways to form sum j
+
+Important Check
+
+If (diff + totalSum) is odd → return 0
