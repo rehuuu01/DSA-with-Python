@@ -1,0 +1,30 @@
+COUNT OF SUBSETS WITH GIVEN DIFFERENCE
+
+Given:
+subset1 - subset2 = diff
+
+Let total_sum = sum(arr)
+
+We know:
+subset1 + subset2 = total_sum
+
+Add both equations:
+
+2 * subset1 = diff + total_sum
+
+Therefore:
+
+subset1 = (diff + total_sum) / 2
+
+The problem reduces to:
+
+Count subsets with sum = subset1
+
+This is the same as Count of Subsets with Given Sum.
+
+DP recurrence:
+
+dp[j] += dp[j - num]
+
+Important condition:
+(diff + total_sum) must be even.
