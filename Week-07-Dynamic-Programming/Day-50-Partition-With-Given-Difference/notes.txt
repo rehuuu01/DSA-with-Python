@@ -1,0 +1,33 @@
+DAY 50 NOTES
+
+Pattern: 0/1 Knapsack – Count Subset Sum
+
+Problem:
+Partition array into two subsets such that:
+subset1 - subset2 = diff
+
+Derivation:
+
+subset1 + subset2 = totalSum
+subset1 - subset2 = diff
+
+Add both equations:
+
+2 * subset1 = totalSum + diff
+
+subset1 = (totalSum + diff) / 2
+
+Therefore the problem becomes:
+Count subsets with sum = (totalSum + diff) / 2
+
+DP State:
+dp[j] = number of subsets with sum j
+
+Transition:
+dp[j] += dp[j - num]
+
+Loop direction:
+Reverse (target → num)
+
+Edge case:
+If (totalSum + diff) is odd → return 0
