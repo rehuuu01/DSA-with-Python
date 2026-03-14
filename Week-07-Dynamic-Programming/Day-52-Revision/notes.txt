@@ -1,0 +1,82 @@
+DAY 52 REVISION — 0/1 KNAPSACK PATTERN
+
+Core Idea:
+Most problems in this section reduce to SUBSET SUM.
+
+Subset Sum State:
+dp[i][j] = ways to make sum j using first i elements.
+
+Transition:
+
+if arr[i-1] <= j
+dp[i][j] = dp[i-1][j] + dp[i-1][j-arr[i-1]]
+
+else
+dp[i][j] = dp[i-1][j]
+
+------------------------------------------------
+
+Important Transformations
+
+Target Sum
+S1 - S2 = target
+S1 + S2 = total_sum
+
+=> S1 = (target + total_sum) / 2
+
+Convert to:
+Count subsets with sum = S1
+
+------------------------------------------------
+
+Count Subsets With Given Difference
+
+diff = S1 - S2
+S1 + S2 = total_sum
+
+=> S1 = (diff + total_sum) / 2
+
+Convert to:
+Count subsets with sum = S1
+
+------------------------------------------------
+
+Partition With Given Difference
+
+Same transformation as above.
+
+------------------------------------------------
+
+Minimum Subset Sum Difference
+
+Goal:
+Minimize |S1 - S2|
+
+Find possible subset sums up to total_sum/2
+Choose the one closest to total_sum/2.
+
+------------------------------------------------
+
+Key Pattern Recognition
+
+If problem asks:
+
+• split array
+• partition array
+• assign + or -
+• count ways to reach target
+
+Think:
+
+➡️ SUBSET SUM
+➡️ 0/1 KNAPSACK PATTERN
+
+------------------------------------------------
+
+Time Complexity
+
+O(n × sum)
+
+Space Optimized
+
+O(sum)
