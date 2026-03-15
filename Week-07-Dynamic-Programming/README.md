@@ -35,7 +35,19 @@ Week-07-Dynamic-Programming/
 │   ├── dp_concepts.txt
 │   └── README.md
 │
-└── README.md
+├── Day-39-01-knapsack/
+│   ├── memoization.py
+│   ├── recursive.py
+│   ├── tabulation.py
+|   ├── space_optimized.py
+│   ├── notes.txt
+|   └── README.md
+|
+└── README.md 
+   
+ 
+
+
 
 ---
 
