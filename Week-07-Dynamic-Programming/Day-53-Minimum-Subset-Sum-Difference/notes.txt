@@ -1,0 +1,21 @@
+Minimum Subset Sum Difference
+
+Idea:
+Partition array into two subsets S1 and S2.
+
+Difference = |S1 - S2|
+
+Since:
+S2 = total_sum - S1
+
+Difference becomes:
+|total_sum - 2*S1|
+
+Goal:
+Find subset sum S1 closest to total_sum / 2.
+
+Steps:
+1. Compute total_sum.
+2. Use subset sum DP to determine possible sums.
+3. Check sums from 0 to total_sum//2.
+4. Compute minimum difference.
