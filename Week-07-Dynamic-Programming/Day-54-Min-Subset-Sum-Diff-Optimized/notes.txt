@@ -1,0 +1,14 @@
+Core Idea:
+Minimize |S - 2*s1|
+
+Key Insight:
+Check only till S/2
+
+DP Meaning:
+dp[j] = can we form sum j
+
+Optimization:
+Use 1D DP (reverse loop)
+
+Pattern:
+All problems reduce to subset sum
