@@ -1,0 +1,23 @@
+DAY 55 – REVISION NOTES
+
+1. Core Idea:
+- Every problem = include / exclude choice
+
+2. DP Meaning:
+- dp[j] = is sum j possible (or count of ways)
+
+3. Transformation:
+- diff problems → subset sum
+- s1 = (diff + totalSum) / 2
+
+4. Optimization:
+- Use 1D DP
+- Always iterate backwards
+
+5. Key Insight:
+- Don’t memorize problems
+- Identify pattern → apply template
+
+6. Mistakes to Avoid:
+- Forward iteration (WRONG)
+- Not checking odd case in diff problems
