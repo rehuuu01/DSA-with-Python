@@ -1,0 +1,20 @@
+UNBOUNDED KNAPSACK
+
+- Items can be taken infinite times
+- Key difference from 0/1:
+  -> Take case uses SAME row
+
+0/1:
+dp[i-1][w-wt]
+
+Unbounded:
+dp[i][w-wt]
+
+1D DP:
+for i:
+    for w from wt → W:
+        dp[w] = max(dp[w], val + dp[w-wt])
+
+Used in:
+- Coin Change
+- Rod Cutting
