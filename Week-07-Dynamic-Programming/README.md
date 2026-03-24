@@ -42,8 +42,11 @@ Week-07-Dynamic-Programming/
 |   ├── space_optimized.py
 │   ├── notes.txt
 |   └── README.md
-|__
-|   Day-40-knapsack-Pattern-Analysis
+|
+├── Day-40-knapsack-pattern-Analysis
+│   ├── notes.txt
+│   └── README.md
+│   
 |
 └── README.md 
    
