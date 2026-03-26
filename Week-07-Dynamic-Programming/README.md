@@ -52,7 +52,10 @@ Week-07-Dynamic-Programming/
 |   ├── subset_sum_space_optimized.py
 │   ├── notes.txt
 |   └── README.md 
-│    
+│
+├── Day-42-Revision-knapsack-pattern
+│   ├── notes.txt
+│   └── README.md
 |
 └── README.md 
    
