@@ -71,6 +71,10 @@ Week-07-Dynamic-Programming/
 |   ├── notes.txt
 |   └── README.md  
 │
+├── Day-46-DP-knapsack-pattern-Revision
+│   ├── notes.txt
+│   └── README.md
+│ 
 └── README.md 
    
  
