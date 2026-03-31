@@ -74,7 +74,12 @@ Week-07-Dynamic-Programming/
 ├── Day-46-DP-knapsack-pattern-Revision
 │   ├── notes.txt
 │   └── README.md
-│ 
+│
+├── Day-47-Unbounded-Knapsack
+│   ├── unbounded_knapsack.py
+|   ├── notes.txt
+|   └── README.md  
+|
 └── README.md 
    
  
