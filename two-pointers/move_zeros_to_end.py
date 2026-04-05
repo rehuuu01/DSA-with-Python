@@ -1,7 +1,7 @@
 def move_zeros_to_end(arr):
     if not arr:
         return arr
-    n = len(arr)
+    n = len(arr) 
     # Move all non-zero elements to the front
     j=0 # Count of non-zero elements
     for i in range(0,len(arr)):
