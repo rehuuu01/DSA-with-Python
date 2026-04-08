@@ -93,7 +93,12 @@ Week-07-Dynamic-Programming/
 ├── Day-50-Partition-With-Given-Difference
 │   ├── partition_with_given_difference.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.md
+|
+├── Day-51-Count-Subsets-With-sum-K
+│   ├── count_subsets_sum_k.py
+|   ├── notes.txt
+|   └── README.md   
 |
 └── README.md 
    
