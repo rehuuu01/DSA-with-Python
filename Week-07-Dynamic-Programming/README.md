@@ -103,6 +103,12 @@ Week-07-Dynamic-Programming/
 ├── Day-52-Revision
 │   ├── notes.txt
 │   └── README.md
+|
+├── Day-53-Minimum-Subset-Sum-Difference
+│   ├── min_subset_sum_difference.py
+|   ├── notes.txt
+|   └── README.md
+|
 └── README.md 
    
  
