@@ -120,9 +120,8 @@ Week-07-Dynamic-Programming/
 |
 ├── Day-56-Unbounded-Knapsack
 │   ├── unbounded_knapsack.py
-|   ├── notes.txt
-| 
-|  └── README.md  
+|   ├── notes.txt 
+|   └── README.md  
 |
 └── README.md 
    
