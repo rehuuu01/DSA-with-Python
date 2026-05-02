@@ -178,7 +178,7 @@ Strong DP skills:
 - Help solve complex optimization problems
 - Differentiate strong candidates from average ones
 
----
+------
 
 ## 📌 Status
 
