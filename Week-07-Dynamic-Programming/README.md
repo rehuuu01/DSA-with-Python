@@ -27,13 +27,13 @@ Week-07-Dynamic-Programming/
 │   ├── fibonacci.py
 │   ├── climbing_stairs.py
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 │
 ├── Day-38-DP-Revision/
 │   ├── fibonacci_revision.py
 │   ├── climbing_stairs_revision.py
 │   ├── dp_concepts.txt
-│   └── README.md
+│   └── README.__+__
 │
 ├── Day-39-01-knapsack/
 │   ├── memoization.py
@@ -41,94 +41,94 @@ Week-07-Dynamic-Programming/
 │   ├── tabulation.py
 |   ├── space_optimized.py
 │   ├── notes.txt
-|   └── README.md
+|   └── README.__+__
 |
 ├── Day-40-knapsack-pattern-Analysis
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 │ 
 ├── Day-41-Subset-Sum
 │   ├── subset_sum_tabulation.py
 |   ├── subset_sum_space_optimized.py
 │   ├── notes.txt
-|   └── README.md 
+|   └── README.__+__ 
 │
 ├── Day-42-Revision-knapsack-pattern
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 |
 ├── Day-43-Target-Sum
 │   ├── target_sum.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.__+__  
 │ 
 ├── Day-44-Revision
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 |
 ├── Day-45-Minimum-Subset-Sum-Difference
 │   ├── min_subset_sum_difference.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.__+__  
 │
 ├── Day-46-DP-knapsack-pattern-Revision
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 │
 ├── Day-47-Unbounded-Knapsack
 │   ├── unbounded_knapsack.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.__+__  
 |
 ├── Day-48-Count-Subset-Difference
 │   ├── count_subset_difference.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.__+__  
 |
 ├── Day-49-Count-Subset-Difference
 │   ├── count_subset_difference.py
 |   ├── notes.txt
-|   └── README.md  
+|   └── README.__+__  
 |
 ├── Day-50-Partition-With-Given-Difference
 │   ├── partition_with_given_difference.py
 |   ├── notes.txt
-|   └── README.md
+|   └── README.__+__
 |
 ├── Day-51-Count-Subsets-With-sum-K
 │   ├── count_subsets_sum_k.py
 |   ├── notes.txt
-|   └── README.md   
+|   └── README.__+__   
 │
 ├── Day-52-Revision
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 |
 ├── Day-53-Minimum-Subset-Sum-Difference
 │   ├── min_subset_sum_difference.py
 |   ├── notes.txt
-|   └── README.md
+|   └── README.__+__
 |
 ├── Day-54-Min-Subset-Sum-Diff-Optimized
 │   ├── min_subset_sum_diff.py
 |   ├── notes.txt
-|   └── README.md
+|   └── README.__+__
 |
 ├── Day-55-Revision
 │   ├── notes.txt
-│   └── README.md
+│   └── README.__+__
 |
 ├── Day-56-Unbounded-Knapsack
 │   ├── unbounded_knapsack.py
 |   ├── notes.txt 
-|   └── README.md  
+|   └── README.__+__  
 |
 ├── Day-57-Unbounded-Knapsack
 │   ├── unbounded_knapsack.py
 |   ├── notes.txt 
-|   └── README.md
+|   └── README.__+__
 |
-└── README.md 
+└── README.__+__ 
    
 
 ----------------
@@ -164,7 +164,7 @@ Week-07-Dynamic-Programming/
 - Edit Distance
 - Palindromic Substrings
 
--------------------------
+-------------------------------------------------------------------------------------
 
 ## 🚀 Why Dynamic Programming Matters
 
