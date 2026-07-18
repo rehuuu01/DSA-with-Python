@@ -164,7 +164,7 @@ Week-07-Dynamic-Programming/
 - Edit Distance
 - Palindromic Substrings
 
--------------------------------------------------------------------------------------
+-----------------------
 
 ## 🚀 Why Dynamic Programming Matters
 
